@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LawMat Legal</title>
+    <style>
+        :root {
+            --primary: #e6f0f8;
+            --accent: #2c3e50;
+            --highlight: #3498db;
+            --button: #27ae60;
+            --text: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--primary);
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--accent);
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 100px auto 60px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(to right, #008080, #1e90ff);
+            color: white;
+            padding: 100px 20px;
+            border-radius: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .search-bar {
+            display: flex;
+            gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .search-bar button {
+            padding: 12px 20px;
+            background-color: var(--button);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+        }
+
+        button {
+            background-color: var(--button);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: var(--highlight);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: var(--accent);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+            border-radius: 12px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            section {
+                margin: 120px 20px 60px;
+            }
+
+            .footer-columns {
+                flex-direction: column;
+            }
+
+            .search-bar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#practice">PRACTICE AREAS</a>
+        <a href="#process">OUR PROCESS</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#consultation">FREE CONSULTATION</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Expert Legal Representation When You Need It Most</h1>
+        <p>Trusted by clients for over 20 years with a 98% success rate</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Criminal defense, family law, business litigation..." />
+            <button>Find Legal Help</button>
+        </div>
+    </section>
+
+    <section id="practice">
+        <h2>Our Practice Areas</h2>
+        <ul>
+            <li><strong>DUI Defense:</strong> Specialized defense strategies for DUI/DWI charges.</li>
+            <li><strong>Drug Charges:</strong> Defense against possession, trafficking, and distribution charges.</li>
+            <li><strong>White Collar:</strong> Expert defense for fraud, embezzlement, and financial crimes.</li>
+        </ul>
+    </section>
+
+    <section id="process">
+        <h2>Our Legal Process</h2>
+        <ol>
+            <li><strong>Initial Consultation:</strong> Free, confidential case evaluation.</li>
+            <li><strong>Case Investigation:</strong> Thorough investigation to build your case.</li>
+            <li><strong>Strategy Development:</strong> Tailored legal strategy for resolution.</li>
+        </ol>
+    </section>
+
+    <section id="about">
+        <h2>About Our Firm</h2>
+        <p>Founded in 2002, LawMat Legal has grown to become one of the most respected legal firms in the region.</p>
+        <p><strong>200+ Years</strong> of combined legal experience</p>
+        <p><strong>5,000+ Clients</strong> served successfully</p>
+        <h3>FAQ</h3>
+        <p><strong>How much do your services cost?</strong><br />
+            We offer flexible fee structures including hourly rates, flat fees, and retainers.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email Address" />
+            <input type="tel" placeholder="Phone Number" />
+            <input type="text" placeholder="Practice Area" />
+            <textarea placeholder="Describe your legal issue" rows="4"></textarea>
+            <button type="submit">Submit Request</button>
+        </form>
+        <p><strong>Main Office:</strong> 500 Legal Way, Suite 200, New York, NY 10001</p>
+        <p><strong>Emergency Line:</strong> 212-555-0100 (24/7)</p>
+        <p><strong>Email:</strong> info@lawmatlegal.com</p>
+        <p><strong>Office Hours:</strong> Mon–Thu: 8:30 AM – 6:00 PM | Sat: 9:00 AM – 2:00 PM</p>
+    </section>
+
+    <section id="consultation">
+        <h2>Need Immediate Legal Help?</h2>
+        <p>Our attorneys are available 24/7 to protect your rights and provide expert counsel.</p>
+        <button>Schedule Consultation</button>
+        <p><strong>Trusted By:</strong> American Bar Association, National Law Journal</p>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>LawMat Legal</h3>
+                <p>Protecting your rights with excellence and integrity since 2002.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Practice Areas</h3>
+                <ul>
+                    <li>Criminal Defense</li>
+                    <li>Family Law</li>
+                    <li>Business Law</li>
+                    <li>Personal Injury</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Our Attorneys</li>
+                    <li>Case Results</li>
+                    <li>Legal Blog</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect With Us</h3>
+                <p>[Facebook] [Twitter] [LinkedIn]</p>
+                <p>&copy; 2023 LawMat Legal Services. All rights reserved.</p>
+                <p><em>Attorney Advertising. Prior results do not guarantee similar outcomes.</em>
+
+</html>
